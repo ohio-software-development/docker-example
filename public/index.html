@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker Example</title>
+    <meta name="description" content="OUSDC Docker example website"/>
+
+    <link rel="icon" type="image/png" sizes="128x128" href="/OUSDC_Icon.png">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        text-align: center;
+        padding: 50px;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        text-align: center;
+      }
+      h1 {
+        color: #4CAF50;
+      }
+      p {
+        font-size: 1.2em;
+        color: #555;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Success!</h1>
+      <p>This page confirms that Docker is running and serving content correctly.</p>
+      <button onclick="count()"><span id="count">0</span> clicks</button>
+    </div>
+
+    <script>
+      let counter = 0;
+      function count() {
+        counter++;
+        document.getElementById('count').textContent = counter;
+      }
+    </script>
+  </body>
+</html>
