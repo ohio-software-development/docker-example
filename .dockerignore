@@ -1,0 +1,15 @@
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Git
+.gitignore
+.git
+
+# NPM packages
+node_modules
+
+# Misc. non-code files
+*.md
+*.pptx

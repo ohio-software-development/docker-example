@@ -1,0 +1,12 @@
+# 'services' will define our services/containers
+services:
+  # Define the 'web-app' service/container
+  web-app:
+    # 'build' tells docker the directory (context) and path the Dockerfile (dockerfile)
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host # 'network' set to host because WSL has network issues otherwise
+    # 'ports' defines the 'external:internal' network ports for the container
+    ports:
+      - 3000:3000
