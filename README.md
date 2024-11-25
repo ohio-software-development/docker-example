@@ -6,9 +6,9 @@ The provided instructions are for Debian-based distros (tested on Ubuntu).
 
 ## Setup
 0. Clone this repo
-1. Install docker-compose
+1. Install docker-compose & and the build plugin
 ```bash
-sudo apt install docker-compose
+sudo apt install docker-compose docker-buildx
 ```
 2. Create `docker-compose.yml`
 ```yml
